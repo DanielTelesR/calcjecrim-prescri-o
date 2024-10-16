@@ -1,0 +1,82 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Prescrição Penal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Prescrição Penal</h1>
+        <form id="prescriptionForm">
+            <label for="birthDate">Data de nascimento do réu:</label>
+            <input type="date" id="birthDate" name="birthDate" required>
+
+            <label for="crimeDate">Data do fato delituoso:</label>
+            <input type="date" id="crimeDate" name="crimeDate" required>
+
+            <label for="maxPenalty">Máximo da pena em anos:</label>
+            <input type="number" id="maxPenalty" name="maxPenalty" step="0.01" required>
+
+            <label for="denuncia">Houve recebimento de denúncia?</label>
+            <select id="denuncia" name="denuncia" required>
+                <option value="nao">Não</option>
+                <option value="sim">Sim</option>
+            </select>
+
+            <div id="denunciaDateContainer" style="display: none;">
+                <label for="denunciaDate">Data do recebimento da denúncia:</label>
+                <input type="date" id="denunciaDate" name="denunciaDate">
+            </div>
+
+            <button type="submit">Calcular</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+ -->
+
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Cálculo de Prescrição Penal</title>
+     <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+     <div class="container">
+         <h1>Calculadora de Prescrição Penal</h1>
+         <form id="prescriptionForm">
+             <label for="crimeDate">Data do fato delituoso:</label>
+             <input type="date" id="crimeDate" name="crimeDate" required>
+
+             <label for="birthDate">Data de nascimento do réu:</label>
+             <input type="date" id="birthDate" name="birthDate" required>
+
+             <label for="maxPenalty">Máximo da pena em anos:</label>
+             <input type="number" id="maxPenalty" name="maxPenalty" step="0.01" required>
+
+             <label for="denuncia">Houve recebimento de denúncia?</label>
+             <select id="denuncia" name="denuncia" required>
+                 <option value="nao">Não</option>
+                 <option value="sim">Sim</option>
+             </select>
+
+             <div id="denunciaDateContainer" style="display: none;">
+                 <label for="denunciaDate">Data do recebimento da denúncia:</label>
+                 <input type="date" id="denunciaDate" name="denunciaDate">
+             </div>
+
+             <button type="submit">Calcular</button>
+         </form>
+         <div id="result"></div>
+     </div>
+
+     <script src="script.js"></script>
+ </body>
+ </html>
